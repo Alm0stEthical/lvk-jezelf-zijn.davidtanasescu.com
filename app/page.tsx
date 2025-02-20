@@ -9,22 +9,30 @@ import { Spotlight } from "@/components/ui/spotlight-new";
 
 const fadeIn = {
   initial: { opacity: 0, y: 20 },
-  animate: { opacity: 1, y: 0 },
+  animate: { opacity: 1, y: 0, transition: { duration: 0.3 } },
   exit: { opacity: 0, y: -20, transition: { duration: 0.2 } },
 };
 
 const staggerContainer = {
   animate: {
     transition: {
-      staggerChildren: 0.05,
+      staggerChildren: 0.03,
     },
   },
 };
 
 const itemFadeIn = {
   initial: { opacity: 0, y: 20 },
-  animate: { opacity: 1, y: 0 },
-  exit: { opacity: 0, scale: 0.95, transition: { duration: 0.2 } },
+  animate: { 
+    opacity: 1, 
+    y: 0,
+    transition: { duration: 0.2 } 
+  },
+  exit: { 
+    opacity: 0, 
+    scale: 0.95, 
+    transition: { duration: 0.15 } 
+  },
 };
 
 export default function Home() {
@@ -73,10 +81,11 @@ export default function Home() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 0.5 }}
         exit={{ opacity: 0 }}
-        className="fixed inset-0 pointer-events-none"
+        className="fixed inset-0 pointer-events-none will-change-opacity"
         style={{
           backgroundImage: `url(${noisePattern})`,
           backgroundRepeat: "repeat",
+          transform: "translate3d(0,0,0)",
         }}
       />
 
@@ -89,7 +98,7 @@ export default function Home() {
           animate={{ scale: 1, opacity: 1 }}
           exit={{ scale: 0.8, opacity: 0 }}
           transition={{ duration: 0.3 }}
-          className="w-32 h-32 mx-auto mb-6 relative group"
+          className="w-32 h-32 mx-auto mb-6 relative group will-change-transform"
           whileHover={{
             rotate: 360,
             transition: {

@@ -142,7 +142,7 @@ Verder lees ik graag romantische boeken. En in mijn vrije tijd? Zoals ge waarsch
     createItem(
       "Muziek",
       md`
-Muziek voor mij is super belangrijk. Ik hou van het leren van nieuwe muziek, maar ik heb ook een aantal favorieten die ik altijd blijft luisteren. Het helpt me bij het concentreren tijdens het programmeren. Maar ik **maak zelf ook muziek**, ik maak alleen beats omdat ik niet echt durf om te zingen - eigenlijk is het niet over durven het gaat meer over dat ik niet goed met woorden uit mijn mond op de spot te halen. Ik zou wel ook ooit muziek maken, maar dan zou ik het niet meer leren.
+Muziek voor mij is super belangrijk. Ik hou van het leren kennen van nieuwe muziek, maar ik heb ook een aantal favorieten die ik altijd blijft luisteren. Het helpt me bij het concentreren tijdens het programmeren. Maar ik **maak zelf ook muziek**, ik maak alleen beats omdat ik niet echt durf om te zingen - eigenlijk is het niet over durven het gaat meer over dat ik niet goed met woorden uit mijn mond op de spot te halen. Ik zou wel ook ooit muziek maken, maar dan zou ik het niet meer leren.
       `,
       "/blog/music.jpg"
     ),

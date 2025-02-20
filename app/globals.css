@@ -60,8 +60,20 @@
   * {
     @apply border-border;
     font-family: "Geist Mono", sans-serif;
+    backface-visibility: hidden;
   }
   body {
     @apply bg-background text-foreground;
   }
-} 
+  .will-change-transform {
+    will-change: transform;
+  }
+  .will-change-opacity {
+    will-change: opacity;
+  }
+  .force-gpu {
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+}
